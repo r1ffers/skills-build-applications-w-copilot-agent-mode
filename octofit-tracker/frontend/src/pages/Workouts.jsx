@@ -5,6 +5,7 @@ import { useAPI } from '../hooks/useAPI';
  * Displays all workout plans and routines
  * 
  * API: GET https://{CODESPACE_NAME}-8000.app.github.dev/api/workouts
+ * Example: https://supreme-memory-759rwv6qj6vfw5xq-8000.app.github.dev/api/workouts
  * Returns: Array of workout objects with exercises and details
  */
 export default function Workouts() {

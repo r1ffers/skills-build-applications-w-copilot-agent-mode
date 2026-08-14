@@ -5,6 +5,7 @@ import { useAPI } from '../hooks/useAPI';
  * Displays all registered users with their profiles
  * 
  * API: GET https://{CODESPACE_NAME}-8000.app.github.dev/api/users
+ * Example: https://supreme-memory-759rwv6qj6vfw5xq-8000.app.github.dev/api/users
  * Returns: Array of user objects with profile information
  */
 export default function Users() {

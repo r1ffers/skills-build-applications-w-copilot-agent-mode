@@ -5,6 +5,7 @@ import { useAPI } from '../hooks/useAPI';
  * Displays team-based fitness leaderboard with rankings
  * 
  * API: GET https://{CODESPACE_NAME}-8000.app.github.dev/api/leaderboard
+ * Example: https://supreme-memory-759rwv6qj6vfw5xq-8000.app.github.dev/api/leaderboard
  * Returns: Array of leaderboard entries grouped by team
  */
 export default function Leaderboard() {

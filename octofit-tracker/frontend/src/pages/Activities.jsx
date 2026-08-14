@@ -5,6 +5,7 @@ import { useAPI } from '../hooks/useAPI';
  * Displays all fitness activities logged by users
  * 
  * API: GET https://{CODESPACE_NAME}-8000.app.github.dev/api/activities
+ * Example: https://supreme-memory-759rwv6qj6vfw5xq-8000.app.github.dev/api/activities
  * Returns: Array of activity objects with type, duration, calories, distance, etc.
  */
 export default function Activities() {

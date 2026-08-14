@@ -5,6 +5,7 @@ import { useAPI } from '../hooks/useAPI';
  * Displays all teams with their leaders and members
  * 
  * API: GET https://{CODESPACE_NAME}-8000.app.github.dev/api/teams
+ * Example: https://supreme-memory-759rwv6qj6vfw5xq-8000.app.github.dev/api/teams
  * Returns: Array of team objects with leader and members info
  */
 export default function Teams() {
