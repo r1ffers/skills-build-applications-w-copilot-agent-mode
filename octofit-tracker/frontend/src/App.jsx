@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Dashboard from './pages/Dashboard';
-import Users from './pages/Users';
-import Teams from './pages/Teams';
-import Activities from './pages/Activities';
-import Leaderboard from './pages/Leaderboard';
-import Workouts from './pages/Workouts';
+import Dashboard from './components/Dashboard';
+import Users from './components/Users';
+import Teams from './components/Teams';
+import Activities from './components/Activities';
+import Leaderboard from './components/Leaderboard';
+import Workouts from './components/Workouts';
 import './App.css';
 
 /**
