@@ -1,6 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import usersRouter from './routes/users';
+import teamsRouter from './routes/teams';
+import activitiesRouter from './routes/activities';
+import leaderboardRouter from './routes/leaderboard';
+import workoutsRouter from './routes/workouts';
 
 dotenv.config();
 
@@ -21,6 +26,13 @@ mongoose
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'OctoFit Tracker API is running' });
 });
+
+// API routes
+app.use('/api/users', usersRouter);
+app.use('/api/teams', teamsRouter);
+app.use('/api/activities', activitiesRouter);
+app.use('/api/leaderboard', leaderboardRouter);
+app.use('/api/workouts', workoutsRouter);
 
 // Start server
 app.listen(PORT, () => {
