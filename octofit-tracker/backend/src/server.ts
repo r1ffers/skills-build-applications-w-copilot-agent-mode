@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import usersRouter from './routes/users';
@@ -19,7 +20,14 @@ const apiBaseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
   : 'http://localhost:8000';
 
+// CORS Configuration
+const corsOptions = {
+  origin: '*',
+  credentials: false,
+};
+
 // Middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to MongoDB
